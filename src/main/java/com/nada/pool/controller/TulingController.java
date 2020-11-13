@@ -31,6 +31,8 @@ public class TulingController {
             view.setViewName("index");
             return view;
         }
+        cookie = cookie.replaceAll(" ", "");
+        System.out.println(cookie);
         initTulingCookie = cookie;
         Boolean isOk = TulingTask.checkLogin();
         view.setViewName("index");
